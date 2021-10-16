@@ -27,6 +27,7 @@ cp {database-file} database/database.sqlite
 </pre>
 </div>
 
+<p>generate a new app key</p>
 <div class="snippet-clipboard-content position-relative overflow-auto">
 <pre>
 <code>
@@ -35,6 +36,7 @@ php artisan key:generate
 </pre>
 </div>
 
+<p>run database migrations (set sqlite database before this step)</p>
 <div class="snippet-clipboard-content position-relative overflow-auto">
 <pre>
 <code>
@@ -43,6 +45,8 @@ php artisan migrate
 </pre>
 </div>
 
+
+<p>run seeders to insert countries to country table</p>
 <div class="snippet-clipboard-content position-relative overflow-auto">
 <pre>
 <code>
