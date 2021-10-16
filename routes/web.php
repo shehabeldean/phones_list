@@ -12,5 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', "CustomerController@index");
+Route::get('/' , function(){
+    return redirect('/customers');
+});
+Route::get('/customers', "CustomerController@index");
+Route::get('/countries', "CountryController@index");

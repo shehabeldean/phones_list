@@ -12,7 +12,11 @@ class Customer extends Model
         return $this->belongsTo(Country::class , "country_code", "code" );
     }
 
-    public function is_phone_valid(){
+    public function getIsPhoneValidAttribute(){
+        return $this->isPhoneValid();
+    }
+
+    private function isPhoneValid(){
         $reg  = $this->country->reg; // country regex
         return preg_match("/$reg/" , $this->phone);
     }

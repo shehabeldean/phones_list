@@ -16,15 +16,15 @@ class CreateCustomerView extends Migration
     {
         DB::statement("
         CREATE VIEW customer_view AS
-        (
+        
           SELECT 
             customer.id as id, 
             customer.name, 
             customer.phone,
-            SUBSTRING_INDEX(customer.phone , ' ',1) as country_code
+            substr(customer.phone, 1, instr(customer.phone, ' ') - 1) as country_code
  
           FROM `customer` 
-        )
+        
       ");
     }
 

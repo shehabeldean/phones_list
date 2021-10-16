@@ -18,7 +18,6 @@ class CreateCountryTable extends Migration
             $table->string('name');
             $table->string('reg');
             $table->string('code');
-            $table->id();
             $table->timestamps();
         });
     }

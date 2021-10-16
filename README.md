@@ -22,7 +22,7 @@ cp .env.example .env
 <div class="snippet-clipboard-content position-relative overflow-auto">
 <pre>
 <code>
-cp {database-file} Database/database.sqlite
+cp {database-file} database/database.sqlite
 </code>
 </pre>
 </div>
