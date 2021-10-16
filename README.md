@@ -12,10 +12,10 @@ composer install
 <pre>
 <code>
 cp .env.example .env
+set DB_CONNECTION=sqllite
 </code>
 </pre>
 </div>
-<p>set DB_CONNECTION=sqllite</p>
 
 
 <p>mv sqllite file to database folder</p>
@@ -51,6 +51,16 @@ php artisan migrate
 <pre>
 <code>
 php artisan db:seed
+</code>
+</pre>
+</div>
+
+
+<p>start app</p>
+<div class="snippet-clipboard-content position-relative overflow-auto">
+<pre>
+<code>
+php artisan serve
 </code>
 </pre>
 </div>
