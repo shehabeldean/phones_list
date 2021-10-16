@@ -12,7 +12,7 @@ composer install
 <pre>
 <code>
 cp .env.example .env
-set DB_CONNECTION=sqllite
+set DB_CONNECTION=sqlite
 </code>
 </pre>
 </div>
