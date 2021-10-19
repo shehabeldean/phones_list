@@ -34,16 +34,18 @@
         <form style="display: inherit;" action="customers" method="get">
             <div class="col-md-3">
                 <select name="countryId">
+                    <option value="">all</option>
                     @foreach($countries as $country)
-                    <option value="{{$country->id}}">{{$country->name}}</option>
+                    <option value="{{$country->id}}" {{isset($filters['countryId']) && $filters['countryId'] == $country->id ? "selected" : ""}} >{{$country->name}}</option>
                     @endforeach
                 </select>
             </div>
 
             <div class="col-md-3">
                 <select name="validPhone">
-                    <option value="1">valid</option>
-                    <option value="0">in-valid</option>
+                    <option value="all" {{isset($filters['validPhone']) && $filters['validPhone']== "all" ? "selected" : ""}}>all</option>
+                    <option value="1"  {{isset($filters['validPhone']) && $filters['validPhone'] == "1" ? "selected" : ""}}>valid</option>
+                    <option value="0"  {{isset($filters['validPhone']) && $filters['validPhone'] == "0" ? "selected" : ""}}>in-valid</option>
                 </select>
             </div>
 

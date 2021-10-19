@@ -24,8 +24,7 @@ class ListCustomersRequest extends FormRequest
     public function rules()
     {
         return [
-            "validPhone" => "boolean",
-            "countryId" => "exists:country,id"
+            "validPhone" => "in:0,1,all",
         ];
     }
 }
