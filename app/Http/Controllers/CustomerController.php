@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Customer;
 use App\Http\Requests\ListCustomersRequest;
 use App\Repositories\Contracts\CountryRepositoryInterface;
 use App\Repositories\Contracts\CustomerRepositoryInterface;
-use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {

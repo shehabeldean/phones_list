@@ -1,10 +1,10 @@
 <?php 
 
-namespace App\Repositories\ORM;
+namespace App\Repositories\Eloquent;
 
 use App\Repositories\Contracts\RepositoryInterface;
 
-abstract class AbstractORMRepository implements RepositoryInterface{
+abstract class AbstractEloquentRepository implements RepositoryInterface{
     protected $query;
     protected $relations = [];
 

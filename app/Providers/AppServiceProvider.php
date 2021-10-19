@@ -4,8 +4,8 @@ namespace App\Providers;
 
 use App\Repositories\Contracts\CountryRepositoryInterface;
 use App\Repositories\Contracts\CustomerRepositoryInterface;
-use App\Repositories\ORM\CountryRepository;
-use App\Repositories\ORM\CustomerRepository;
+use App\Repositories\Eloquent\CountryRepository;
+use App\Repositories\Eloquent\CustomerRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

@@ -1,11 +1,11 @@
 <?php 
 
-namespace App\Repositories\ORM;
+namespace App\Repositories\Eloquent;
 
-use App\Repositories\ORM\Models\Customer;
+use App\Repositories\Eloquent\Models\Customer;
 use App\Repositories\Contracts\CustomerRepositoryInterface;
 
-class CustomerRepository extends AbstractORMRepository implements CustomerRepositoryInterface{
+class CustomerRepository extends AbstractEloquentRepository implements CustomerRepositoryInterface{
 
     public function __construct()
     {
